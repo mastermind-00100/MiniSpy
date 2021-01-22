@@ -5,6 +5,7 @@
 # This will make a persistent backdoor so if they reboot the computer it will
 # will start up on startup
 
+# WARNING: THIS WILL ONLY DOWNLOAD THE PY FILE
 # ------------------------------------------------------------------------------
 
 # Import libraries
