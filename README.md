@@ -14,3 +14,6 @@ CMD (Command Prompt) or the Terminal based on the operating system. The installe
 put the payload onto the startup file of windows (Linux not supported) so after reboot
 the program will provide a persistent backdoor. All of the programs (except MiniSpy_Listener.py)
 will be turned into an EXE with Pyinstaller (https://www.pyinstaller.org/) for easy exploitation.
+
+Note: The MiniSpy_Installer_EXE will pull the payload EXE and the MiniSpy_Installer_PY
+will pull the .Py version
