@@ -12,8 +12,7 @@ This is just supposed to provide an alternative for Pen Testers
 the payload will try to bind to the listener. Then backdoor access will provide access to the
 CMD (Command Prompt) or the Terminal based on the operating system. The installer will
 put the payload onto the startup file of windows (Linux not supported) so after reboot
-the program will provide a persistent backdoor. All of the programs (except MiniSpy_Listener.py)
-will be turned into an EXE with Pyinstaller (https://www.pyinstaller.org/) for easy exploitation.
+the program will provide a persistent backdoor.
 
 Note: The MiniSpy_Installer_EXE will pull the payload EXE and the MiniSpy_Installer_PY
 will pull the .Py version
